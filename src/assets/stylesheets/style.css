@@ -52,8 +52,7 @@ input {
   margin-top: 10px;
 }
 
-.scores-list li {
-  list-style: none;
+.scores-list div {
   font-size: 1.1rem;
   padding: 4px;
 }
