@@ -24,10 +24,6 @@ form {
   flex: 1;
 }
 
-li {
-  list-style: none;
-}
-
 input {
   height: 40px;
   margin-bottom: 20px;
@@ -36,13 +32,28 @@ input {
   padding: 0 10px;
 }
 
-.submit-btn {
+.btn {
   width: 6rem;
   height: 2rem;
   font-size: 0.98rem;
 }
 
+.refresh-btn {
+  float: right;
+}
+
 .sub-header {
   font-size: 1.5rem;
   font-weight: bolder;
+}
+
+.scores-list {
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
+.scores-list li {
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 4px;
 }
