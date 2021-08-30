@@ -1,3 +1,1 @@
-import './style.css';
-
-console.log('Hahaha')
+import './assets/stylesheets/style.css';

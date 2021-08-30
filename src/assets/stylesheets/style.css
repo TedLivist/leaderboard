@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.scores-section {
+  padding: 0 4em 0 8em;
+}
+
+.input-section {
+  padding: 0 8em 0 4em;
+}
+
+form {
+  display: grid;
+}
+
+.recent {
+  display: flex;
+}
+
+.recent div {
+  flex: 1;
+}
+
+input {
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 3px solid black;
+  padding: 0 10px;
+}
+
+.btn {
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.98rem;
+}
+
+.refresh-btn {
+  float: right;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.scores-list {
+  border: 3px solid black;
+  margin-top: 10px;
+}
+
+.scores-list div {
+  font-size: 1.1rem;
+  padding: 4px;
+}
+
+.submit-btn {
+  float: right;
+}
