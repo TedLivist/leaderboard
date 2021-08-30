@@ -1,3 +1,48 @@
-body {
-  background-color: red;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+.scores-section {
+  padding: 0 4em 0 8em;
+}
+
+.input-section {
+  padding: 0 8em 0 4em;
+}
+
+form {
+  display: grid;
+}
+
+.recent {
+  display: flex;
+}
+
+.recent div {
+  flex: 1;
+}
+
+li {
+  list-style: none;
+}
+
+input {
+  height: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  border: 3px solid black;
+  padding: 0 10px;
+}
+
+.submit-btn {
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.98rem;
+}
+
+.sub-header {
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
