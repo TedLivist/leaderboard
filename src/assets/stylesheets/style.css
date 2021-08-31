@@ -5,11 +5,11 @@
 }
 
 .scores-section {
-  padding: 0 4em 0 8em;
+  padding: 0 4em 0 12em;
 }
 
 .input-section {
-  padding: 0 8em 0 4em;
+  padding: 0 12em 0 4em;
 }
 
 form {
@@ -29,7 +29,8 @@ input {
   margin-bottom: 20px;
   margin-top: 10px;
   border: 3px solid black;
-  padding: 0 10px;
+  padding: 0 20px;
+  font-size: 0.98rem;
 }
 
 .btn {
