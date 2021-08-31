@@ -18,6 +18,8 @@ window.addEventListener('load', async () => {
 
   submitBtn.addEventListener('click', async () => {
     await submitScores(nameInput.value, scoreInput.value, `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${result}/scores`);
+    nameInput.value = '';
+    scoreInput.value = '';
   });
 
   refreshBtn.addEventListener('click', async () => {
