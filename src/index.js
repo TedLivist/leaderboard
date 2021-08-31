@@ -5,6 +5,9 @@ const refreshBtn = document.querySelector('.refresh-btn')
 const nameInput = document.querySelector('.player-name')
 const scoreInput = document.querySelector('.player-score')
 
+const container = document.querySelector('.scores-list')
+container.style.display = 'none'
+
 const createGame = async () => {
   const response = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games', {
     method: 'POST',
@@ -36,17 +39,19 @@ const submitScores = async (name, score, url) => {
 }
 
 const buildList = async (containerElement, list) => {
-  
+  containerElement.style.display = 'block'
+  containerElement.innerHTML = ''
+
+  for (let item of list) {
+    const scoreContainer = document.createElement('div')
+    scoreContainer.innerHTML = `${item.user}: ${item.score}`
+    containerElement.appendChild(scoreContainer)
+  }
 }
 
 window.addEventListener('load', async () => {
   let { result } = await createGame()
   result = result.substring(14, 34)
-
-  //submitBtn.addEventListener('click', async () => {
-    //let data = await getScores(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${result}/scores`)
-    //console.log(data.result)
-  //})
 
   submitBtn.addEventListener('click', async () => {
     const subbed = await submitScores(nameInput.value, scoreInput.value, `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${result}/scores`)
@@ -55,11 +60,6 @@ window.addEventListener('load', async () => {
 
   refreshBtn.addEventListener('click', async () => {
     const getted = await getScores(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${result}/scores`)
-    for (let item of getted.result) {
-      console.log(item.user)
-    }
+    await buildList(container, getted.result)
   })
-
-
-
 })
