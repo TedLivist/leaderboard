@@ -25,6 +25,10 @@
 - Run `npm i` to install the dependencies
 - Run `npm start` to start the application
 
+### Usage
+- Type in name and score in the corresponding inputs and click the `Submit` button. Do this as many times as you wish - once, twice, (thrice?)
+- To get the list of the name-score pairs, click the `Refresh` and the list of the inputs you have submitted will be rendered
+
 ## Author
 
 👤 **Teddy-Livingstone**
