@@ -23,6 +23,7 @@ h1 {
 
 form {
   display: grid;
+  margin-top: 25px;
 }
 
 .recent {
@@ -43,12 +44,16 @@ input {
 }
 
 .btn {
-  width: 6rem;
-  height: 2rem;
-  font-size: 0.98rem;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  box-shadow: 5px 5px;
+  border-radius: 7%;
+  cursor: pointer;
 }
 
-.refresh-btn {
+.btn-right {
   float: right;
 }
 
@@ -60,18 +65,10 @@ input {
 
 .scores-list {
   border: 3px solid black;
-  margin-top: 10px;
-}
-
-.scores-list:nth-child(odd) {
-  background-color: red;
+  margin-top: 25px;
 }
 
 .scores-list div {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 4px;
-}
-
-.submit-btn {
-  float: right;
 }
