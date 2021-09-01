@@ -1,3 +1,12 @@
+body {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-left: 4rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
