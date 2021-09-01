@@ -1,3 +1,12 @@
+.balsamiq {
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-left: 4rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -14,6 +23,7 @@
 
 form {
   display: grid;
+  margin-top: 25px;
 }
 
 .recent {
@@ -34,30 +44,31 @@ input {
 }
 
 .btn {
-  width: 6rem;
-  height: 2rem;
-  font-size: 0.98rem;
+  width: 6.5rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  border: 3px solid black;
+  box-shadow: 5px 5px;
+  border-radius: 7%;
+  cursor: pointer;
 }
 
-.refresh-btn {
+.btn-right {
   float: right;
 }
 
 .sub-header {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bolder;
+  letter-spacing: 0.12rem;
 }
 
 .scores-list {
   border: 3px solid black;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 .scores-list div {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   padding: 4px;
-}
-
-.submit-btn {
-  float: right;
 }
